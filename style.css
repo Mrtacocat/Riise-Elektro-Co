@@ -9,16 +9,41 @@ body {
 
 /*----header----*/
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
     background-color: #212329;
     color: #fff;
 }
-header h1{
-    text-align: center;
-    padding: 30px;
+
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .header-img {
-    width: 300px;
+    cursor: pointer;
+    width: 350px;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color:red;
 }
 
 /*----main----*/
@@ -86,7 +111,7 @@ main {
 #bestill_btn:hover {
     cursor:pointer;
     background-color:seashell;
-    color: #F9423D;
+    color: red;
     transition: all 0.4s ease-out;
 }
 
