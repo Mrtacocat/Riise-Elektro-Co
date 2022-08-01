@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,6 +9,9 @@
 }
 body {
     font-family:'Segoe UI';
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 /*----header----*/
@@ -66,12 +73,14 @@ li, a {
 /*----main----*/
 main {
     margin: 0;
-    min-height: calc(100vh - 150.45 - 626.8px);
 }
 
 
 /*----footer----*/
 
+footer {
+    margin-top: auto;
+}
 .footer-container {
     background-color: #212329;
     padding: 4rem 0 2rem 0;
@@ -131,9 +140,6 @@ main {
 }
 
 
-
-    
-}
 
 
 
