@@ -33,7 +33,7 @@ li, a {
 
 .header-img {
     cursor: pointer;
-    width: 350px;
+    width: 300px;
 }
 
 .nav__links {
@@ -139,6 +139,14 @@ footer {
     transition: all 0.4s ease-out;
 }
 
+
+@media screen and (max-width: 800px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    
+}
 
 
 
