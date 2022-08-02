@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riise Elektro & Co</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <link rel="icon" href="img/logo_smallest.jpg">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -41,17 +44,21 @@
                     </span>
                   </button>
             </div>
-
         </div>
+
+        <div class="container">
+            <h2 class="text-center font-weight-bold">Våre Partnere</h2>
+            <section class="customer-logos slider">
+                <div class="slide"><img src="img/logo/miele.png" alt=""></div>
+                <div class="slide"><img src="/img/logo/hobart.png" alt=""></div>
+                <div class="slide"><img src="/img/logo/hako.png" alt=""></div>
+            </section>
+        </div>
+        
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestiae sint esse. Provident maxime blanditiis consectetur minus, magni cumque, praesentium facere laboriosam dolorum, qui eum eos vel repudiandae quae sunt?</p>
         <p>Dolore sunt odio, quod esse tempore voluptatum repellendus dicta eius, placeat temporibus ipsa vero beatae eaque. Voluptatem sunt accusantium assumenda vero numquam odio illum veritatis ipsum, nobis quidem animi vitae.</p>
         <p>Voluptate eveniet laudantium autem dolores. Minima cupiditate nostrum perspiciatis, earum, commodi eligendi culpa repudiandae est unde eaque velit veniam nam cumque nisi quas ipsam, eos beatae! Obcaecati et fugit ex!</p>
         <p>Nihil animi vitae sequi dolores illo alias quam saepe ullam tempore unde doloremque voluptates minima fugiat consectetur quibusdam voluptatum, non optio. Minus officia voluptatibus asperiores! Minus ex ad nesciunt repellat!</p>
-        <p>Eveniet sequi, quos molestias cupiditate sint voluptas iste alias fugiat consectetur omnis aut eligendi explicabo eos. Repellat illo, aut, sunt fugit tenetur magni dolores, officia incidunt distinctio saepe perspiciatis et.</p>
-        <p>Possimus, a quasi, totam optio exercitationem perspiciatis dolore unde explicabo sit facilis corrupti tempore repellat tenetur, odio temporibus fuga officia! Obcaecati temporibus neque nam doloremque quis, molestias blanditiis eum deserunt.</p>
-        <p>A natus praesentium itaque alias facere quos ea nesciunt, quibusdam vel perspiciatis aspernatur dicta maxime odit repudiandae necessitatibus, obcaecati, blanditiis doloremque sint qui ipsam. Quia dolor ullam pariatur cupiditate totam.</p>
-        <p>Accusamus hic nemo vitae illo molestias mollitia explicabo temporibus voluptates eum sit nostrum, totam numquam, cupiditate unde debitis qui culpa dolorum molestiae. Magni itaque aperiam adipisci neque saepe exercitationem facilis.</p>
-        <p>Rem, deserunt? Rerum esse, quaerat laudantium temporibus, vitae expedita itaque reiciendis iusto dolor quisquam et corporis optio autem magnam minima nobis officiis sed culpa accusantium doloribus illum! Eum, doloribus saepe.</p>
         <p>Nulla mollitia totam delectus, eaque, recusandae officiis esse, odio voluptates voluptate numquam voluptas? Molestiae nostrum voluptatem, nesciunt sed necessitatibus soluta similique fugiat magnam, aliquid dolor, minima non. Hic, voluptatibus inventore.</p>
 </main>
     <footer>
@@ -85,6 +92,32 @@
     </div>
 </footer>
     
+
+<script>
+   $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 1,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 2400,
+            arrows: false,
+            dots: false,
+            pauseOnHover:false,
+            variableWidth: true,
+            responsive: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow:4
+                }
+            }, {
+                breakpoint: 520,
+                setting: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+</script>
 </body>
 </html>
 
