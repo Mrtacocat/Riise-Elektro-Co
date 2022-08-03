@@ -12,23 +12,24 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
+    <div class="bg">
+    <div id="navbar">
         <a href="index.html"><img src="img/transparentRE.png" alt="Riise elektro" class="header-img"></a>
-        <nav>
+        
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class="nav__links">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="VåreTjenester.html">Våre Tjenester</a></li>
-                <li><a href="KontaktOss.html">Kontakt oss</a></li>
-            </ul>
-        </nav>
-       
+            
+                <a class="active navbar_links" href="index.html">Hjem</a>
+                <a class="navbar_links" href="VåreTjenester.html">Våre Tjenester</a>
+                <a class="navbar_links" href="KontaktOss.html">Kontakt oss</a>
+        
+    </div>
+</div>
 
-    </header>
+    
     
     <section class="hero-image">
         <div class="hero-text">
@@ -46,7 +47,7 @@
         </div>
     </section>
     
-    <main>
+    <main class="content">
         
 
         <div class="container">
@@ -60,6 +61,16 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni molestiae sint esse. Provident maxime blanditiis consectetur minus, magni cumque, praesentium facere laboriosam dolorum, qui eum eos vel repudiandae quae sunt?</p>
         <p>Dolore sunt odio, quod esse tempore voluptatum repellendus dicta eius, placeat temporibus ipsa vero beatae eaque. Voluptatem sunt accusantium assumenda vero numquam odio illum veritatis ipsum, nobis quidem animi vitae.</p>
         <p>Voluptate eveniet laudantium autem dolores. Minima cupiditate nostrum perspiciatis, earum, commodi eligendi culpa repudiandae est unde eaque velit veniam nam cumque nisi quas ipsam, eos beatae! Obcaecati et fugit ex!</p>
+        <p>Nihil animi vitae sequi dolores illo alias quam saepe ullam tempore unde doloremque voluptates minima fugiat consectetur quibusdam voluptatum, non optio. Minus officia voluptatibus asperiores! Minus ex ad nesciunt repellat!</p>
+        <p>Nulla mollitia totam delectus, eaque, recusandae officiis esse, odio voluptates voluptate numquam voluptas? Molestiae nostrum voluptatem, nesciunt sed necessitatibus soluta similique fugiat magnam, aliquid dolor, minima non. Hic, voluptatibus inventore.</p>
+        <p>Nihil animi vitae sequi dolores illo alias quam saepe ullam tempore unde doloremque voluptates minima fugiat consectetur quibusdam voluptatum, non optio. Minus officia voluptatibus asperiores! Minus ex ad nesciunt repellat!</p>
+        <p>Nulla mollitia totam delectus, eaque, recusandae officiis esse, odio voluptates voluptate numquam voluptas? Molestiae nostrum voluptatem, nesciunt sed necessitatibus soluta similique fugiat magnam, aliquid dolor, minima non. Hic, voluptatibus inventore.</p>
+        <p>Nihil animi vitae sequi dolores illo alias quam saepe ullam tempore unde doloremque voluptates minima fugiat consectetur quibusdam voluptatum, non optio. Minus officia voluptatibus asperiores! Minus ex ad nesciunt repellat!</p>
+        <p>Nulla mollitia totam delectus, eaque, recusandae officiis esse, odio voluptates voluptate numquam voluptas? Molestiae nostrum voluptatem, nesciunt sed necessitatibus soluta similique fugiat magnam, aliquid dolor, minima non. Hic, voluptatibus inventore.</p>
+        <p>Nihil animi vitae sequi dolores illo alias quam saepe ullam tempore unde doloremque voluptates minima fugiat consectetur quibusdam voluptatum, non optio. Minus officia voluptatibus asperiores! Minus ex ad nesciunt repellat!</p>
+        <p>Nulla mollitia totam delectus, eaque, recusandae officiis esse, odio voluptates voluptate numquam voluptas? Molestiae nostrum voluptatem, nesciunt sed necessitatibus soluta similique fugiat magnam, aliquid dolor, minima non. Hic, voluptatibus inventore.</p>
+        <p>Nihil animi vitae sequi dolores illo alias quam saepe ullam tempore unde doloremque voluptates minima fugiat consectetur quibusdam voluptatum, non optio. Minus officia voluptatibus asperiores! Minus ex ad nesciunt repellat!</p>
+        <p>Nulla mollitia totam delectus, eaque, recusandae officiis esse, odio voluptates voluptate numquam voluptas? Molestiae nostrum voluptatem, nesciunt sed necessitatibus soluta similique fugiat magnam, aliquid dolor, minima non. Hic, voluptatibus inventore.</p>
         <p>Nihil animi vitae sequi dolores illo alias quam saepe ullam tempore unde doloremque voluptates minima fugiat consectetur quibusdam voluptatum, non optio. Minus officia voluptatibus asperiores! Minus ex ad nesciunt repellat!</p>
         <p>Nulla mollitia totam delectus, eaque, recusandae officiis esse, odio voluptates voluptate numquam voluptas? Molestiae nostrum voluptatem, nesciunt sed necessitatibus soluta similique fugiat magnam, aliquid dolor, minima non. Hic, voluptatibus inventore.</p>
 </main>
@@ -97,16 +108,34 @@
 
 <script>
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
+    /*----sticky navbar----*/
+    window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
 
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+
+    /*----change color scroll navbar----*/
+    function scrollValue() {
+        var navbar = document.getElementById('navbar');
+        var scroll = window.scrollY;
+            if (scroll < 1) {
+                navbar.classList.remove('BgColour');
+            } else {
+                navbar.classList.add('BgColour');
+            }
     }
+
+window.addEventListener('scroll', scrollValue);
+
+
+
     
    $(document).ready(function(){
         $('.customer-logos').slick({
