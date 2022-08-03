@@ -23,7 +23,7 @@ body {
     justify-content:flex-start;
     align-items: center;
     overflow: hidden;
-    background-color:transparent;
+    background-color: rgba(33, 35, 41, 0.8);
 }
 
 #navbar .navbar_links {
