@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="img/headerimg.PNG" alt="Riise elektro" class="header-img"></a>
+        <a href="index.html"><img src="img/transparentRE.png" alt="Riise elektro" class="header-img"></a>
         <nav>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -29,25 +29,27 @@
        
 
     </header>
-    <main>
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1 style="font-size:50px;">Vi utfører service på alle typer hvitevarer og storkjøkkenutstyr</h1>
-                <p class="undertext">Vi kan utføre service på alle type hvitevarer og alle merker. Vi reparerer og selger også storhusholdning. Ta kontakt med oss når dere trenger hjelp!</p>
-                <h2 style="font-size: 50px; margin-bottom: 1rem;">Ring: 35 54 80 80</h2>
-                <!--<button>BESTILL SERVICE</button>-->
-                <button class="button-82-pushable" role="button">
-                    <span class="button-82-shadow"></span>
-                    <span class="button-82-edge"></span>
-                    <span class="button-82-front text">
-                      BESTILL SERVICE
-                    </span>
-                  </button>
-            </div>
+    
+    <section class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px;">Vi utfører service på alle typer hvitevarer og storkjøkkenutstyr</h1>
+            <p class="undertext">Vi kan utføre service på alle type hvitevarer og alle merker. Vi reparerer og selger også storhusholdning. Ta kontakt med oss når dere trenger hjelp!</p>
+            <h2 style="font-size: 50px; margin-bottom: 1rem;">Ring: 35 54 80 80</h2>
+            <!--<button>BESTILL SERVICE</button>-->
+            <button class="button-82-pushable" role="button">
+                <span class="button-82-shadow"></span>
+                <span class="button-82-edge"></span>
+                <span class="button-82-front text">
+                  BESTILL SERVICE
+                </span>
+              </button>
         </div>
+    </section>
+    
+    <main>
+        
 
         <div class="container">
-            <h2 class="text-center font-weight-bold">Våre Partnere</h2>
             <section class="customer-logos slider">
                 <div class="slide"><img src="img/logo/miele.png" alt=""></div>
                 <div class="slide"><img src="img/logo/hobart.png" alt=""></div>
@@ -94,26 +96,37 @@
     
 
 <script>
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+    
    $(document).ready(function(){
         $('.customer-logos').slick({
             slidesToShow: 1,
-            slidesToScroll: 3,
-            autoplay: true,
+            slidesToScroll: 1,
             autoplaySpeed: 2400,
+            speed: 2000,
+            cssEase: 'linear',
+            autoplay: true,
+            infinity:true,
             arrows: false,
             dots: false,
             pauseOnHover:false,
-            variableWidth: true,
-            responsive: [{
-                breakpoint: 768,
-                setting: {
-                    slidesToShow:4
-                }
-            }, {
-                breakpoint: 520,
-                setting: {
-                    slidesToShow: 3
-                }
+            responeive: [{
+                breakpoint: 767,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
             }]
         });
     });

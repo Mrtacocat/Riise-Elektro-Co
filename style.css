@@ -17,6 +17,7 @@ body {
 
 /*----header----*/
 header {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,6 +49,7 @@ li, a {
 
 .nav__links li a {
     transition: all 0.3s ease 0s;
+    text-decoration: none;
 }
 
 .nav__links li a:hover {
@@ -163,28 +165,35 @@ li, a {
   
 .hero-image {
     display: flex;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/heroimg.jpg");
-    width: 100%;
-    height: 500px;
-    background-position: center;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("img/red.webp");
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 .hero-text {
+    margin-top: 0;
+    margin-bottom: 0.5em;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 0 20px;
     color: #fff;
-    padding: 40px;
 }
 
 /*----slideshow----*/
 .container {
     padding-top: 10px;
+    background-color:;
+    overflow-y: hidden;
+
 }
 
 .slick-slide{
@@ -194,22 +203,32 @@ li, a {
     width: 100%;
 }
 .slick-slider{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    /*
     position: relative;
     display: block;
     box-sizing: border-box;
+    */
 }
 .slick-list{
-    position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     margin: 0;
     padding: 0;
+    width: 300px;
+    height: auto;
+    
 }
 .slick-track{
     position: relative;
     top: 0;
     left: 0;
-    display: block
+    display: block;
 }
 .slick-slide{
     display: none;
@@ -229,6 +248,7 @@ li, a {
 /*----main----*/
 main {
     margin: 0;
+    background-color:darkgrey;
 }
 
 
