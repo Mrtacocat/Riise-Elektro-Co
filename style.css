@@ -236,6 +236,18 @@ a {
     color: #fff;
 }
 
+.hero-text h1 {
+    text-shadow: 4px 4px #b71616bf;
+}
+
+.hero-text p {
+    text-shadow: 2px 2px #b71616bf;
+}
+
+.hero-text h2 {
+    text-shadow: 4px 4px #b71616bf;
+}
+
 /*----slideshow----*/
 .container {
     padding-top: 10px;
