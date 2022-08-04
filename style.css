@@ -17,6 +17,49 @@ body {
 
 /*----header----*/
 
+
+/* HIDING HAMBURGER ICON */
+#navbar label, #hamburger {
+    display: none;
+}
+
+/* MENU ITEMS */
+
+@media screen and (max-width: 768px){
+    /* BREAK INTO VERTICAL MENU */
+    #hamitems {
+        display: block;
+
+    }
+    #hamitems a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    #navbar label {
+        display: inline-block;
+        color: #fff;
+        font-size: 2em;
+        font-style: normal;
+        padding: 10px;
+    }
+
+    #hamitems.active.navbar_links{
+        display: none;
+    }
+
+    a#hamitems.navbar_links {
+        display: none;
+    }
+
+    #navbar input:checked ~ #hamitems {
+        display: block;
+    }
+}
+
+
 #navbar {
     z-index: 1;
     display: flex;
@@ -64,44 +107,10 @@ body {
     border-bottom: 1px solid red;
 }
 
-/*header {
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 5%;
-    background-color: #212329;
-    color: #fff;
-}
-
-a {
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-
-
-.nav__links {
-    list-style: none;
-}
-
-.nav__links li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-}
-
-.nav__links li a:hover {
-    color:red;
-}*/
 .header-img {
     cursor: pointer;
     width: 300px;
+    padding-left: 10px;
 }
 
 /*----hero-section----*/
