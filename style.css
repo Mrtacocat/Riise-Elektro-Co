@@ -294,11 +294,11 @@ body {
 
 .image-logo img{
     border: 1px solid #212329;
+    border-radius: 0.5rem;
     padding: 5px 15px;
     box-shadow: 10px 5px 5px #212329;
     width: auto;
     height: 80px;
-    padding-bottom: 20px;
     margin-bottom: 20px;
     margin-left: 5px;
 }
@@ -314,6 +314,25 @@ main {
     color: #f2f2f2;
 }
 
+.teknikere-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.image-tek img {
+    border-radius: 50%;
+    border: 2px solid #212329;
+}
+
+.image-tek {
+    box-shadow: 5px 2.5px 2.5px #212329;
+    border: 2px solid #e2e2e2;
+    background-color: #e2e2e2;
+    padding: 5px;
+    border-radius: 5px;
+}
 
 /*----footer----*/
 
