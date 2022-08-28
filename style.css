@@ -287,8 +287,6 @@ body {
     flex-wrap:wrap;
     justify-content: space-around;
     width: 100%;
-    
-
 }
 
 .image-logo img{
@@ -303,6 +301,8 @@ body {
 
 
 /*----main----*/
+
+
 main {
     margin: 0;
     background-image:linear-gradient(#ffffff, rgb(206, 206, 206) );
@@ -397,7 +397,6 @@ main {
     display: flex;
     flex-direction: row;
     margin-top: 82px;
-    
     background-image: linear-gradient(45deg, #FFFFFF, rgb(255, 89, 89));
     
 }
@@ -432,7 +431,6 @@ main {
     border-radius: 5px;
     margin-top: 3px;
     margin-bottom: 3px;
-
 }
 
 .kontorteam-logoes {
@@ -558,6 +556,18 @@ footer {
 @media screen and (max-width: 680px) {
     .title-teknikere {
         font-size: large;
+    }
+
+    .image-kontor {
+        height: 200px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        
     }
 }
 
