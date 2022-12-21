@@ -185,8 +185,9 @@
 
                 observer2.observe(document.querySelector(".container"))
             </script>
+
+            
         <hr class="rounded-dividers">
-        <FadeInSection>
         <div class="informasjon-container">
             <img class="image-kontor" src="img/kontor/kontorteam.png" alt="kontorteam">
                 <div class="info">
@@ -212,10 +213,43 @@
                 </div>
 
         </div>
-    </FadeInSection>
+        <script>
+            const observer3 = new IntersectionObserver(entries => {
+               entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    document.querySelectorAll(".image-kontor")[0].classList.add("fadeInTop");
+                }
+               });
+            });
+
+            observer3.observe(document.querySelector(".informasjon-container"))
+        </script>
+        <script>
+            const observer4 = new IntersectionObserver(entries => {
+               entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    document.querySelectorAll(".topText")[0].classList.add("fadeInTop");
+                    document.querySelectorAll(".bottomText")[0].classList.add("fadeInTop");
+                }
+               });
+            });
+
+            observer4.observe(document.querySelector(".info"))
+        </script>
         <div class="map-container">
             <iframe class="map_hjem" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4095.151890404862!2d9.686673!3d59.122764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd654ed7aa864b89!2sRiise%20Elektro%20ANS!5e0!3m2!1sen!2sus!4v1659877982894!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <script>
+            const observer5 = new IntersectionObserver(entries => {
+               entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    document.querySelectorAll(".map_hjem")[0].classList.add("fadeInTop");
+                }
+               });
+            });
+
+            observer5.observe(document.querySelector(".map-container"))
+        </script>
 </main>
     <footer>
     <div class="footer-container">
