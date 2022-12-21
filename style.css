@@ -139,7 +139,79 @@ body {
         display:none;
     }
 
+ 
     
+    .image-tek {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        border: 2px solid #e2e2e2;
+        background-color: #e2e2e2;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 20px;
+        transition: transform .2s;
+        cursor: pointer;
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+    
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+    
+      .text {
+        color: #000000;
+        font-size: 15px;
+        padding: 8px 12px;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+
+      .teknikere-container2 {
+        display: none;
+      }
+      .tlfnr {
+        font-size: 40px;
+    }
     
 }
 
@@ -213,6 +285,47 @@ body {
       padding: 12px 42px;
     }
 
+    .teknikere-container {
+        display:none;
+    }
+
+    
+    .teknikere-logo2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .image-tek2 img {
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+      
+    .image-tek2:hover {
+        -ms-transform: scale(1.5); /* IE 9 */
+      -webkit-transform: scale(1.5); /* Safari 3-8 */
+      transform: scale(1.5); 
+    }
+
+    .teknikere-container2 {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    .text2 {
+        color: #000000;
+        font-size: 15px;
+        padding: 8px 12px;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tlfnr {
+        font-size: 50px;
+    }
 
   }
   
@@ -289,6 +402,153 @@ body {
     text-shadow: 2px 2px #b71616bf;
 }
 
+/* animated hero section */
+
+.fadeInLeft {
+    -webkit-animation: fadeInLeft 1.2s both;
+    -moz-animation: fadeInLeft 1.2s both;
+    -o-animation: fadeInLeft 1.2s both;
+    animation: fadeInLeft 1.2s both;
+}
+
+.fadeInTop {
+    -webkit-animation: fadeInTop 1.2s both;
+    -moz-animation: fadeInTop 1.2s both;
+    -o-animation: fadeInTop 1.2s both;
+    animation: fadeInTop 1.2s both;
+}
+
+.fadeInRight {
+    -webkit-animation: fadeInRight 1.2s both;
+    -moz-animation: fadeInRight 1.2s both;
+    -o-animation: fadeInRight 1.2s both;
+    animation: fadeInRight 1.2s both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-o-keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInLeft {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes fadeInTop {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-moz-keyframes fadeInTop {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-o-keyframes fadeInTop {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes fadeInTop {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-moz-keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@-o-keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInRight {
+    0%{
+        opacity: 0;
+        -webkit-transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+
 /* merker */
 .container {
     margin-top: 60px;
@@ -351,75 +611,7 @@ main {
     vertical-align: middle;
 }
 
-.image-tek {
-    display: none;
-}
 
-
-.image-tek {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    border: 2px solid #e2e2e2;
-    background-color: #e2e2e2;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 20px;
-    transition: transform .2s;
-    cursor: pointer;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-
-  .text {
-    color: #000000;
-    font-size: 15px;
-    padding: 8px 12px;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  .active, .dot:hover {
-    background-color: #717171;
-  }
   
 .image-tek:hover {
     -ms-transform: scale(1.5); /* IE 9 */
