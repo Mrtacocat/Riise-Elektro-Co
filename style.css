@@ -211,38 +211,6 @@ body {
         font-size: 40px;
     }
 
-    /* tjenester mobile view */
-    /*.headersTjenester {
-        text-align: center;
-        padding: 10px;
-        color: #ff6a6a;
-    }
-
-    .first_container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .first_section {
-        border-radius: 0.4rem;
-        padding: 5px 15px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-        background-color: #fff;
-        margin: 50px;
-    }
-    
-    .first_img {
-        border-radius: 0.4rem;
-        width:  200px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }*/
-
 }
 
 /*----hero-section----*/
@@ -356,31 +324,6 @@ body {
     .tlfnr {
         font-size: 50px;
     }
-
-    /*.first_section {
-        border-radius: 0.4rem;
-        padding: 5px 15px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-        background-color: #fff;
-        margin: 50px;
-    }
-
-    .headersTjenester {
-        text-align: center;
-        padding: 10px;
-        color: #ff6a6a;
-        font-size: x-large;
-    }
-
-    .first_container {
-        display: inline-block;
-        font-size: larger;
-    }
-
-    .first_img {
-        float: left;
-        margin: 10px;
-    }*/
 
     
   }
