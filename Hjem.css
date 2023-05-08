@@ -1349,6 +1349,15 @@
   .u-section-7 .u-group-1 {
     height: auto;
   }
+  
+}
+
+@media (min-width: 1199px) {
+  .u-section-5 .u-line-1 {
+    width: 912px;
+    margin: 4px 0 0 114px;
+}
+  
 }
 
 @media (max-width: 991px) {
