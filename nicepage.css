@@ -7023,7 +7023,7 @@ ul.u-text li:last-child {
   visibility: hidden;
 }
 .u-border-none {
-  border-width: 0 !important;
+  border-width: 5px !important;
 }
 .u-button-style[class*="u-border-"].u-border-no-top,
 [class*="u-border-"].u-border-no-top {
